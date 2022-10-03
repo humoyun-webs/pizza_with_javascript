@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Exam</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-black">
+      <div class="container">
+        <img src="images/logo.svg" class="nav-brand" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              /></svg
+          ></span>
+          
+        </button>
+
+
+        <nav>
+          <div class="navbar2">
+            <div class="container2 nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              
+              <div class="menu-items">
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Woman</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+
+
+
+
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav menus me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Man</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Woman</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <button class="right-section__cart align-items-center bg-transparent border-0">
+            <p
+              class="d-none right-section__carts-number bg-info rounded-2 mb-0"
+              aria-valuetext="00"
+            >
+              0
+            </p>
+            <p
+              id="result"
+              class="mb-0 bg-warning rounded-pill numberofresult position-absolute translate-middle-x top-0 right ps-2 pe-2 numberofresult-lg-rounded-pill"
+            ></p>
+            <img src="images/icon-cart.svg" alt="" class="me-3" />
+          </button>
+          <!-- added carts -->
+          <div
+            class="modal-added d-none position-absolute bg-light p-3 top-100 end-0 left"
+          >
+            <div class="addedCart__heading">
+              <p>Cart</p>
+            </div>
+            <hr>
+            <div class="modal-added__carts">
+              <div class="carts__results d-flex align-items-center">
+                <img
+                  class="d-block rounded-2"
+                  src="images/image-product-1.jpg"
+                  alt="carts result image"
+                  width="50"
+                  height="50"
+                  
+                />
+                <div>
+                  <p class="carted-product mb-0 p-0 ms-2">
+                    Fall Limited Edition Sneakers
+                  </p>
+                  <div class="d-flex">
+                    <p class="carted-product1 mt-0 p-0 ms-2">125$ *</p>
+                    <p class="numberOfProducts me-3"></p>
+                    <strong class="lastPriceOfProducts">$</strong>
+                    <img src="images/icon-delete.svg" height="20px" alt="" class="d-flex ms-5 delete">
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="checkout btn btn-warning m-auto d-block w-100 fw-bold rounded-2"
+              >
+                Checkout
+              </button>
+            </div>
+
+            <div class="noItemsCart d-none">
+              <p>no item</p>
+            </div>
+          </div>
+
+          <img src="images/image-avatar.png" class="avatar1" alt="" width="45px" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="hr container"></div>
+
+    <section class="container mt-5 ">
+      <div class="row">
+        <div class="left col-6  modal-body">
+          <!-- <img
+            src="images/image-product-1.jpg"
+            alt=""
+            width="150px"
+            class="big_picture"
+          /> -->
+          <div class="slide-content">
+            <div class="slide-list">
+               <div class="slide-item">
+                  <img src="images/image-product-1.jpg" alt="item" width="450px"
+                  class="big_picture">
+               </div>
+               <div class="slide-item">
+                  <img src="images/image-product-2.jpg" alt="item"  width="150px" class="big_picture">
+               </div>
+               <div class="slide-item">
+                  <img src="images/image-product-3.jpg" alt="item" width="150px" class="big_picture">
+               </div>
+               <div class="slide-item">
+                  <img src="images/image-product-4.jpg" alt="item" width="150px" class="big_picture">
+               </div>
+      
+      
+            </div>
+            <span class="prev">
+               <i class="bi bi-arrow-left-circle-fill"></i>
+            </span>
+      
+            <span class="next">
+               <i class="bi bi-arrow-right-circle-fill"></i>
+            </span>
+         </div>
+
+         
+
+         <div class="four">
+            <img src="images/image-product-1.jpg" alt="" width="100px" class="ind" />
+            <img src="images/image-product-2.jpg" alt="" width="100px" class="ind" />
+            <img src="images/image-product-3.jpg" alt="" width="100px" class="ind" />
+            <img src="images/image-product-4.jpg" alt="" width="100px" class="ind" />
+          </div>
+        </div>
+        <div class="right col-6">
+          <h5>Sneaker Company</h5>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion. Feturing a
+            durable rubber outer sole, they'll withstand everything the weather can offer.
+          </p>
+
+          <h1 class="d-flex">$125.00 <div class="sale"><h6>50%</h6></div></h1>
+          <strike>$250.00</strike>
+          <div class="buttons d-flex">
+            <button class=" btn btn-light w-25 mt-3 fw-bold d-flex justify-content-between" type="button">
+            
+              <h5
+                class="result"
+                class="mb-0   top-0 right ps-2 pe-2"
+              ></h5>
+              <h5> +</h5>
+            </button>
+            </button>
+            <button class="btn--addToCart btn btn-light w-50 mt-3 ms-4 fw-bold d-flex justify-content-center" type="button" style="background-color: #f67a1d; color: white;" >
+            
+             <img src="images/icon-cart.svg" class="me-3" alt="">
+              <h5 style="color: white;">Click and add to card</h5>
+            </button>
+          </div>
+         
+        </div>
+        <!-- <div class="right col-6"></div> -->
+      </div>
+    </section>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script/plugin.js"></script>
+  <script src="script/script.js"></script>
+</html>

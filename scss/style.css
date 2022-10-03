@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Poppins:wght@200&family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+body .navbar {
+  background-color: white !important;
+  margin: 20px;
+}
+body .nav-link {
+  color: rgba(66, 61, 61, 0.633);
+  cursor: pointer;
+  margin: 0px 10px;
+  position: relative;
+  font-weight: 600;
+}
+body .nav-link:hover {
+  font-weight: 600;
+  color: black;
+}
+body .nav-link:hover::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 50px;
+  margin: 60px auto;
+  border: 2px solid #f67a1d;
+  background-color: #f67a1d;
+}
+body .navbar-nav {
+  margin-left: 60px;
+}
+body .right-section .me-3 {
+  cursor: pointer;
+}
+body .right-section .avatar1 {
+  border: 2px solid #f67a1d;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+body .hr {
+  width: 100%;
+  height: 0.5px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+body section {
+  width: 100%;
+}
+body section .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body section .left .big_picture {
+  width: 450px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+}
+body section .left .four img {
+  margin: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+body section .left .four img:hover {
+  filter: blur(5px gray);
+  -webkit-filter: blur(5px gray);
+}
+body section .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body section .right h5 {
+  color: #f67a1d;
+  font-weight: 900;
+}
+body section .right h1 {
+  font-weight: 900;
+  font-size: 56px;
+}
+body section .right p {
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+}
